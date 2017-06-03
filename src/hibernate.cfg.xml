@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/IPC</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">carvalho</property>
+    
+        <!-- DQL dialect -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    
+        <!-- Echo all executed SQL to stout -->
+        <property name="sow_sql">true</property>
+        <property name="format_sql">true</property>
+    
+        <!-- Drop and re-creat the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+    
+        <!--names the annoted entity class -->
+        <mapping class="entidade.Retail"/>
+
+    
+    
+    </session-factory>
+</hibernate-configuration>
