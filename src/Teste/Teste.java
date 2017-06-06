@@ -15,11 +15,12 @@ import utils.Salvar;
  * @author Izidio Carvalho
  */
 public class Teste {
+
     public static void main(String[] args) throws IOException {
-      //Teste
-       Salvar.escrever(Salvar.create_CSV());
-       Hibernate.start_db();
-       Hibernate.set_db(CSV.file_CSV());
-       Hibernate.end_db();
+        //Teste
+        Salvar.escrever(Salvar.create_CSV());
+//       Hibernate.start_db();
+        Hibernate.set_db(CSV.file_CSV());
+        Hibernate.end_db();
     }
 }

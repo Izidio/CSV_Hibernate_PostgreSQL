@@ -22,7 +22,8 @@ public class CSV {
     public static List file_CSV() throws FileNotFoundException, IOException {
         int n = 0;
         int i = 0;
-        BufferedReader br = new BufferedReader(new FileReader("src/Retail.csv"));
+        BufferedReader br = new BufferedReader(new FileReader("src/Online_Retail.csv"));
+//        BufferedReader br = new BufferedReader(new FileReader("src/Retail.csv"));
         String line = "";
         List lista = new ArrayList();
         System.out.println("Iniciando leitura do arquivo CSV");
